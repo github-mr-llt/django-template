@@ -12,6 +12,6 @@ celery_app = celery.Celery(
     main="{{project_name}}",
     namespace="{{project_name}}|celery",
     changes=settings.CELERY,
-    #config_source=settings.CELERY
+    # config_source=settings.CELERY
 )
 celery_app.autodiscover_tasks()
